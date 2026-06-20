@@ -1,10 +1,2 @@
-export default function Home() {
-  return (
-    <main className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-900">Libreta Ainilebu</h1>
-        <p className="mt-2 text-gray-500">Sistema de gestión clínica veterinaria</p>
-      </div>
-    </main>
-  );
-}
+import { redirect } from "next/navigation";
+export default function Home() { redirect("/dashboard"); }
