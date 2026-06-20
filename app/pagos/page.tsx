@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { AppShell } from "@/components/layout/AppShell";
 import { getPagosPendientes } from "@/lib/db/queries";
 import { AccionesPago } from "@/components/pagos/AccionesPago";

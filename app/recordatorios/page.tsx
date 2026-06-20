@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { AppShell } from "@/components/layout/AppShell";
 import { getRecordatoriosPendientes } from "@/lib/db/queries";
 import { AccionesRecordatorio } from "@/components/recordatorios/AccionesRecordatorio";

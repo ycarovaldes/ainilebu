@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { AppShell } from "@/components/layout/AppShell";
 import { getAtencionesDia, getRecordatoriosPendientes, getPagosPendientes } from "@/lib/db/queries";
 import Link from "next/link";
