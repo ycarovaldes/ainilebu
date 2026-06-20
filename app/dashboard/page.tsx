@@ -1,3 +1,4 @@
+"use client";
 import { AppShell } from "@/components/layout/AppShell";
 import { atenciones, recordatorios, pagos, pacientes } from "@/lib/mock-data";
 import Link from "next/link";
@@ -7,7 +8,6 @@ import {
   ChevronRight,
   AlertCircle,
   Clock,
-  CheckCircle2,
 } from "lucide-react";
 
 function fechaHoy() {
@@ -53,13 +53,6 @@ function formatPeso(n: number) {
   return new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 }).format(n);
 }
 
-const tipoRecordatorioColor: Record<string, string> = {
-  control:     "var(--color-verde-suave)",
-  vacuna:      "#EEF2FF",
-  seguimiento: "#F5F0FF",
-  pago:        "var(--color-adv-suave)",
-  otro:        "var(--color-fondo)",
-};
 const tipoRecordatorioBorde: Record<string, string> = {
   control:     "var(--color-verde-claro)",
   vacuna:      "#818CF8",

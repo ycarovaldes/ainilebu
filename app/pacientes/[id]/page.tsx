@@ -45,10 +45,6 @@ function formatFecha(iso: string) {
   });
 }
 
-function calcularEdad(especie: string, edadTexto: string) {
-  return edadTexto;
-}
-
 export default async function PacientePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const paciente = pacientes.find((p) => p.id === id);
@@ -58,10 +54,8 @@ export default async function PacientePage({ params }: { params: Promise<{ id: s
     .filter((a) => a.paciente_id === id)
     .sort((a, b) => new Date(b.fecha).getTime() - new Date(a.fecha).getTime());
 
-  const iniciales = paciente.nombre.slice(0, 2).toUpperCase();
   const esGato = paciente.especie === "felino";
   const avatarBg = esGato ? "#E8E7FF" : "var(--color-verde-suave)";
-  const avatarColor = esGato ? "#6366F1" : "var(--color-verde)";
 
   return (
     <AppShell>

@@ -101,7 +101,7 @@ export default function PacientesPage() {
             }}
           >
             <p style={{ fontSize: 18, fontWeight: 600, color: "var(--color-texto-suave)", margin: "0 0 6px" }}>
-              Sin resultados para "{query}"
+              Sin resultados para &ldquo;{query}&rdquo;
             </p>
             <p style={{ fontSize: 14, color: "var(--color-texto-tenue)", margin: 0 }}>
               Prueba con otro nombre, teléfono o número de ficha.
